@@ -1,18 +1,3 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Player = game.Players.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = true, SaveConfig = true, IntroEnabled = false, })
-
-OrionLib:MakeNotification({
-	Name = "Logged in!",
-	Content = "You are Logged in as "..Player.Name..".",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
-getgenv().Key = "GS" -- the key for the script 
-getgenv().Keyinput = "string"
-
-function MakeScriptHub()
 if game.PlaceId == 2986677229 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
     local Window = OrionLib:MakeWindow({Name = "v1.2 Giant Simulator", HidePremium = false, IntroEnabled = true,IntroText = "Welcome!", SaveConfig = true, ConfigFolder = "GiantSimulatorTest"})
@@ -20,8 +5,6 @@ if game.PlaceId == 2986677229 then
     --Values
     getgenv().autoClick = true
     getgenv().autoQuest = true	
-    
-    
     
     --Functions
     function autoClick()
